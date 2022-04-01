@@ -1,0 +1,187 @@
+.page {
+    background-color: white;
+    font-family: "inter";
+    margin-left: 10rem;
+    margin-right: 5rem;
+    margin-top: 4.3rem;
+}
+header {
+    width: 80rem;
+    height: 2.25rem;
+}
+header img {
+    size: 3rem;
+    padding: 0.125rem 0px;
+}
+header nav a {
+    text-decoration: none;
+    color: #555555;
+    padding-top: 0.6rem;
+    padding-bottom: 0.31rem;
+    font-size: 1.25rem;
+    font-style: normal;
+}
+header nav a:not(:last-child) {
+    margin-right: 14px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "launching pinkguy"
+        "likenoother pinkguy"
+        "lines pinkguy"
+        "button pinkguy";
+}
+.pinkguy {
+    grid-area: pinkguy;
+    background-color: white;
+}
+.launching {
+    grid-area: launching;
+    margin-top: 7rem;
+}
+.likenoother {
+    grid-area: likenoother;
+    background-color: white;
+    font-size: 5rem;
+}
+.lines {
+    grid-area: lines;
+    background-color: white;
+    font-size: 1.5rem;
+}
+.button {
+    grid-area: button;
+}
+.buttonstyle {
+    border-radius: 100px;
+    border: 10px;
+    background-color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #c1017b, #f2670b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+}
+.earlybirds {
+    position: relative;
+}
+.earlybirdstext {
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+}
+.orangestyletitle {
+    font-size: 2.5rem;
+    color: black;
+}
+.orangestyletext {
+    font-size: 1.5rem;
+    color:black;
+}
+.logos {
+    display: flex;
+    justify-content:left;
+    margin-top: 5rem;
+}
+ .logomargin:not(:last-child) {
+    margin-right: 6rem;
+}
+.superraretitle {
+    font-size: 2.5rem;
+    color: black;
+    margin-top: 8rem;
+}
+.superraretext {
+    font-size: 1.5rem;
+    color: #555555;
+}
+.superraretext a {
+    font-size: 1.5rem;
+    color: #555555;
+    font-weight: bold;
+}
+.nftcards {
+    display: flex;
+    justify-content: space-between;
+}
+.promocontainer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: white;
+}
+.promocontainer .card {
+    position: relative;
+    width: 18rem;
+    height: 26.5rem;
+    background: rgb(227, 224, 224);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.promocontainer .card:not(:last-child) {
+    margin-right: 2.5rem;
+}
+.ETH {
+    display: flex;
+    justify-content: space-between;
+}
+.contentbox {
+    display: flex;
+    justify-content: space-between;
+}
+.gloop {
+    color: rgb(234, 157, 14);
+    font-size: 0.8rem;
+}
+.purple {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.number {
+    color: grey;
+    font-size: 1.3rem;
+}
+.crypto {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.bid {
+    color: grey;
+}
+.day {
+    color: grey;
+    font-size: 1.3rem;
+}
+.table {
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+width: 80rem;
+line-height: 0rem;
+}
+.line {
+    border-top: 3px solid rgb(211, 205, 205);
+}
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+        }
+}
