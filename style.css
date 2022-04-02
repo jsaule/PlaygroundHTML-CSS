@@ -50,6 +50,7 @@ header nav a:not(:last-child) {
     grid-area: likenoother;
     background-color: white;
     font-size: 5rem;
+    font-weight: 200;
 }
 .lines {
     grid-area: lines;
@@ -177,8 +178,22 @@ padding-left: 0.5rem;
 width: 80rem;
 line-height: 0rem;
 }
-.line {
-    border-top: 3px solid rgb(211, 205, 205);
+.box {
+    margin-top: 3rem;
+    border-bottom: 2px solid rgb(230, 223, 223);
+    padding-bottom: 0rem;
+    border-top: 2px solid rgb(230, 223, 223);
+}
+.upsell {
+    margin-top: 3.3rem;
+    margin-left: 8rem;
+    height: 90%;
+}
+.likenootherupsell {
+    grid-area: likenoother;
+    background-color: white;
+    font-size: 4rem;
+    font-weight: 200;
 }
 @media only screen and (max-width: 600px) {
     header nav {
