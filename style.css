@@ -108,6 +108,7 @@ header nav a:not(:last-child) {
 .superraretext {
     font-size: 1.5rem;
     color: #555555;
+    margin-bottom: 4rem;
 }
 .superraretext a {
     font-size: 1.5rem;
@@ -119,13 +120,10 @@ header nav a:not(:last-child) {
     justify-content: space-between;
 }
 .promocontainer {
-    padding: 0;
-    margin: 0;
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    min-height: 50vh;
     background: white;
 }
 .promocontainer .card {
@@ -179,14 +177,14 @@ width: 80rem;
 line-height: 0rem;
 }
 .box {
-    margin-top: 3rem;
-    border-bottom: 2px solid rgb(230, 223, 223);
+    margin-top: 9rem;
+    border-bottom: 0.2rem solid #EEEEEE;
     padding-bottom: 0rem;
-    border-top: 2px solid rgb(230, 223, 223);
+    border-top: 0.2rem solid #EEEEEE;
 }
 .upsell {
     margin-top: 3.3rem;
-    margin-left: 8rem;
+    margin-left: 15rem;
     height: 90%;
 }
 .likenootherupsell {
@@ -194,6 +192,50 @@ line-height: 0rem;
     background-color: white;
     font-size: 4rem;
     font-weight: 200;
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;    
+}
+.footertables {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+.copyrightstyle {
+    color: #999;
+    font-size: 1rem;
+    margin-top: 6rem;;
+}
+.exclusivestyle {
+    color: #555555;
+    font-size: 1rem;
+}
+.social {
+    display: flex;
+    justify-content: left;
+}
+.social img {
+    margin-right: 1rem;
+    margin-top: 0.8rem;
+}
+.footertable {
+    color:#555555;
+    text-align: left;
+    margin-right: 4rem;
+}
+.footertable a {
+    text-decoration: none;
+    color:#555555
+}
+.footertable tr > * + * {
+    padding-left: 4rem;
+}
+.footertable th {
+    padding-bottom: 1rem;
+}
+.footertable td {
+    padding-bottom: 0.5rem;
 }
 @media only screen and (max-width: 600px) {
     header nav {
