@@ -236,7 +236,13 @@ header nav a:not(:last-child) {
     display: none;
 }
 .mobilelogos {
-    display:none;
+    display: none;
+}
+.mobilefooter {
+    display: none;
+}
+.mobilefootertable {
+    display: none;
 }
 @media only screen and (max-width: 700px) {
     header nav {
@@ -353,26 +359,36 @@ header nav a:not(:last-child) {
         overflow: visible;
     }
     .footertables {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 6rem;
+        display: none;
     }
-    .footertable {
+    .mobilefooter {
+        display: flex;
+        margin-top: 2rem;
+    }
+    .mobilefootertable {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
         color:#555555;
         text-align: left;
-        margin-right: 4rem;
     }
-    .footertable a {
+    .mobilefootertable a {
         text-decoration: none;
         color:#555555
     }
-    .footertable tr > * + * {
+    .mobilefootertable tr > * + * {
         padding-left: 4rem;
     }
-    .footertable th {
-        padding-bottom: 1rem;
+    .mobilefootertable th {
+        padding-top: 1rem;
     }
     .footertable td {
-        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+    }
+    .copyright {
+        display: none;
+    }
+    .mobilecopyright {
+        display: flex;
     }
 }
