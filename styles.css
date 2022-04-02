@@ -40,21 +40,19 @@ header nav a:not(:last-child) {
 }
 .pinkguy {
     grid-area: pinkguy;
-    background-color: white;
+    height: auto;
 }
 .launching {
     grid-area: launching;
-    margin-top: 7rem;
+    margin-top: 9rem;
 }
 .likenoother {
     grid-area: likenoother;
-    background-color: white;
-    font-size: 5rem;
-    font-weight: 200;
+    font-size: 5.5rem;
+    font-weight: 900;
 }
 .lines {
     grid-area: lines;
-    background-color: white;
     font-size: 1.5rem;
 }
 .button {
@@ -85,18 +83,18 @@ header nav a:not(:last-child) {
 }
 .orangestyletitle {
     font-size: 2.5rem;
-    color: black;
+    color: #111;
 }
 .orangestyletext {
     font-size: 1.5rem;
-    color:black;
+    color: #111;
 }
 .logos {
     display: flex;
     justify-content:left;
     margin-top: 5rem;
 }
- .logomargin:not(:last-child) {
+.logomargin:not(:last-child) {
     margin-right: 6rem;
 }
 .superraretitle {
@@ -123,7 +121,6 @@ header nav a:not(:last-child) {
     position: relative;
     justify-content: left;
     align-items: center;
-    background: white;
 }
 .promocontainer .card {
     position: relative;
@@ -170,10 +167,10 @@ header nav a:not(:last-child) {
     font-size: 1.3rem;
 }
 .table {
-padding-right: 0.5rem;
-padding-left: 0.5rem;
-width: 80rem;
-line-height: 0rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    width: 80rem;
+    line-height: 0rem;
 }
 .box {
     margin-top: 9rem;
@@ -188,18 +185,12 @@ line-height: 0rem;
 }
 .likenootherupsell {
     grid-area: likenoother;
-    background-color: white;
     font-size: 4rem;
     font-weight: 200;
 }
 .copyright {
     display: flex;
     justify-content: space-between;    
-}
-.footertables {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6rem;
 }
 .copyrightstyle {
     color: #999;
@@ -217,6 +208,11 @@ line-height: 0rem;
 .social img {
     margin-right: 1rem;
     margin-top: 0.8rem;
+}
+.footertables {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
 }
 .footertable {
     color:#555555;
@@ -236,8 +232,147 @@ line-height: 0rem;
 .footertable td {
     padding-bottom: 0.5rem;
 }
-@media only screen and (max-width: 40rem) {
+.mobileshow {
+    display: none;
+}
+.mobilelogos {
+    display:none;
+}
+@media only screen and (max-width: 700px) {
     header nav {
         display: none;
         }
+    .mobileshow {
+        display: inline-flex;
+    }
+    .page {
+        background-color: white;
+        font-family: "inter";
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+    .container {
+        max-width: 23rem;
+        max-height: 2.2rem;
+    }
+    header img {
+        max-height: 2.15rem;
+    }
+    .hero {
+        display: grid;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .launching {
+        grid-area: launching;
+    }
+    .likenoother {
+        grid-area: likenoother;
+        font-size: 3rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    .lines {
+        grid-area: lines;
+        font-size: 1.25rem;
+    }
+    .button {
+        grid-area: button;
+        max-height: 4.6rem;
+    }
+    .buttonstyle {
+        border-radius: 6.25rem;
+        border: 0.2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.05rem;
+        padding: 0.9rem 1.5rem;
+        border: solid 0.3rem transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(218, 22, 22, 0)), linear-gradient(101deg, #c1017b, rgb(249, 8, 120), #f2670b, orange, rgb(100, 128, 0));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 0.6rem 31rem 0.2rem #fff inset;
+    }
+    .pinkguy {
+        grid-area: pinkguy;
+        display: grid;
+        max-height: 60%;
+    }
+    .earlybirds {
+        position: relative;
+    }
+    .orangestyletext {
+        font-size: 1.25rem;
+        color: #111;
+    }
+    .orangestyletitle {
+        font-size: 2.2rem;
+        color: #111;
+    }
+    .earlybirdstext {
+        position: absolute;
+        top: 5.5rem;
+        left: 2.5rem;
+    }
+    .logos {
+        display: none;
+    }
+    .mobilelogos {
+        display: block;
+        margin-top: 3rem;
+        max-width: 100%;
+        height: auto;
+    }
+    .mobilelogos tr > * + * {
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+    .superraretitle {
+        font-size: 2.5rem;
+        color: black;
+        margin-top: 3rem;
+    }
+    .superraretext {
+        font-size: 1.25rem;
+        color: #555555;
+        margin-bottom: 4rem;
+    }
+    .superraretext a {
+        font-size: 1.25rem;
+        color: #555555;
+        font-weight: bold;
+    }
+    .promocontainer .card {
+        position: relative;
+        width: 18rem;
+        height: 26.5rem;
+        background: rgb(227, 224, 224);
+        border-radius: 1rem;
+        overflow: visible;
+    }
+    .footertables {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+    }
+    .footertable {
+        color:#555555;
+        text-align: left;
+        margin-right: 4rem;
+    }
+    .footertable a {
+        text-decoration: none;
+        color:#555555
+    }
+    .footertable tr > * + * {
+        padding-left: 4rem;
+    }
+    .footertable th {
+        padding-bottom: 1rem;
+    }
+    .footertable td {
+        padding-bottom: 0.5rem;
+    }
 }

@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Startup</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type ="x-icon" href="assets/shortlogo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="normalize.css">
 </head>
 <body class = "page">
     <header>
@@ -21,14 +22,9 @@
                 <a href = "a">Launch</a>
                 <a style = "color: #FF3998" href = "a">Sign Up</a>
             </nav>
-            <div class="mobileShow">
-                <img src = "assets/menu.svg" alt = "nftlanding" />
+            <div class="mobileshow">
+                <img class="hamburgermobile" src = "assets/menu.svg" alt = "hamburgermenu" />
             </div>
-                <style type="text/css">
-                .mobileShow {display: none;}
-                @media only screen
-                and (max-device-width: 600px){ .mobileShow { display: inline; justify-content: space-between;}}
-                </style>
     </header>
     <section class="hero">
         <div class="pinkguy">
@@ -56,6 +52,18 @@
         <img class = "logomargin" src="assets/companies/3.svg">
         <img class = "logomargin" src="assets/companies/4.svg">
         <img class = "logomargin" src="assets/companies/5.svg">
+    </div>
+    <div class = "mobilelogos">
+        <table>
+            <tr>
+                <td><img class = "logomargin" src="assets/companies/1.svg"></td>
+                <td><img class = "logomargin" src="assets/companies/2.svg"></td>
+            </tr>
+            <tr>
+                <td><img class = "logomargin" src="assets/companies/3.svg"></td>
+                <td><img class = "logomargin" src="assets/companies/5.svg"></td>
+            </tr>
+        </table>
     </div>
     <section>
         <p class = "superraretitle"><b>LE Super Rare Auction</b></p> 
