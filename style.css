@@ -11,7 +11,7 @@ header {
 }
 header img {
     size: 3rem;
-    padding: 0.125rem 0px;
+    padding: 0.125rem 0rem;
 }
 header nav a {
     text-decoration: none;
@@ -22,7 +22,7 @@ header nav a {
     font-style: normal;
 }
 header nav a:not(:last-child) {
-    margin-right: 14px;
+    margin-right: 1rem;
 }
 .container {
     display: flex;
@@ -61,20 +61,19 @@ header nav a:not(:last-child) {
     grid-area: button;
 }
 .buttonstyle {
-    border-radius: 100px;
-    border: 10px;
+    border-radius: 6.25rem;
+    border: 0.8rem;
     background-color: white;
     font-size: 1.5rem;
     text-align: center;
     display: inline-block;
     font-size: 1.5rem;
     padding: 2rem 4rem;
-    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-    border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #c1017b, #f2670b);
+    border: solid 0.4rem transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(218, 22, 22, 0)), linear-gradient(101deg, #c1017b, rgb(249, 8, 120), #f2670b, orange, rgb(100, 128, 0));
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px #fff inset;
+    box-shadow: 0.8rem 62rem 0.4rem #fff inset;
 }
 .earlybirds {
     position: relative;
@@ -237,7 +236,7 @@ line-height: 0rem;
 .footertable td {
     padding-bottom: 0.5rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 40rem) {
     header nav {
         display: none;
         }
