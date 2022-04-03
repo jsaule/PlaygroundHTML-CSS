@@ -277,45 +277,62 @@ header nav a:not(:last-child) {
         position: relative;
         margin-bottom: 2rem;
     }
+    .mobilecontainer {
+        background-color: white;
+        max-width: 30rem;
+    }
+    .button {
+        grid-area: button;
+    }
+    .buttonstyle {
+        border-radius: 6.25rem;
+        border: 0.8rem;
+        background-color: white;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.25rem;
+        padding: 1rem 2.5rem;
+        border: solid 0.3rem transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(218, 22, 22, 0)), linear-gradient(101deg, #c1017b, rgb(249, 8, 120), #f2670b, orange, rgb(100, 128, 0));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 0.8rem 7rem 0.4rem #fff inset;
+    }
+    .hero {
+        display: grid;
+        grid-template-columns: 18rem 11rem;
+        grid-template-rows: 4rem 9rem 7rem 6rem;
+        grid-template-areas:
+            "launching pinkguy"
+            "likenoother pinkguy"
+            "lines pinkguy"
+            "button pinkguy";
+    }
+    .pinkguy {
+        grid-area: pinkguy;
+    }
+    .pinkguy img {
+        max-width: 28rem;
+        margin-left: -4rem;
+        margin-top: -3rem;
+    }
     .launching {
         grid-area: launching;
+        font-size: 1rem;
+        margin-top: 2rem;
     }
     .likenoother {
         grid-area: likenoother;
         font-size: 3rem;
         font-weight: 900;
-        margin-bottom: 1rem;
     }
     .lines {
         grid-area: lines;
         font-size: 1.25rem;
     }
-    .button {
-        grid-area: button;
-        max-height: 4.6rem;
-    }
-    .buttonstyle {
-        border-radius: 6.25rem;
-        border: 0.2rem;
-        font-size: 1.2rem;
-        text-align: center;
-        display: inline-block;
-        font-size: 1.05rem;
-        padding: 0.9rem 1.5rem;
-        border: solid 0.3rem transparent;
-        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(218, 22, 22, 0)), linear-gradient(101deg, #c1017b, rgb(249, 8, 120), #f2670b, orange, rgb(100, 128, 0));
-        background-origin: border-box;
-        background-clip: content-box, border-box;
-        box-shadow: 0.6rem 31rem 0.2rem #fff inset;
-    }
-    .pinkguy {
-        grid-area: pinkguy;
-        display: grid;
-        max-width: 60%;
-        height: auto;
-    }
     .earlybirds {
         position: relative;
+        min-width: 20rem;
     }
     .orangestyletext {
         font-size: 1.25rem;
@@ -324,11 +341,11 @@ header nav a:not(:last-child) {
     .orangestyletitle {
         font-size: 2.2rem;
         color: #111;
+        top: 5.5rem;
+        left: 2.5rem;
     }
     .earlybirdstext {
         position: absolute;
-        top: 5.5rem;
-        left: 2.5rem;
     }
     .logos {
         display: none;
@@ -367,12 +384,28 @@ header nav a:not(:last-child) {
         border-radius: 1rem;
         overflow: visible;
     }
-    .box {
-        margin-top: 4rem;
-        border-bottom: 0.2rem solid #EEEEEE;
-        padding-bottom: 0rem;
-        border-top: 0.2rem solid #EEEEEE;
+    .greenlady {
+        grid-area: pinkguy;
     }
+    .box {
+        display: none;
+    }
+    .mobilebox {
+        margin-top: 9rem;
+        border-bottom: 0.15rem solid #EEEEEE;
+        padding-bottom: 0rem;
+        border-top: 0.15rem solid #EEEEEE;
+    }
+    .greenlady img {
+        max-width: 10rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+    .likenootherupsell {
+        grid-area: likenoother;
+        font-size: 3rem;
+        font-weight: 900;
+    }    
     .footertables {
         display: none;
     }
