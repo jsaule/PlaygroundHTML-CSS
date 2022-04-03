@@ -257,7 +257,7 @@ header nav a:not(:last-child) {
         }
     .mobileshow {
         display: inline-flex;
-        margin-left: 10rem;
+        margin-left: 13rem;
     }
     .page {
         background-color: white;
@@ -280,6 +280,7 @@ header nav a:not(:last-child) {
         display: grid;
         position: relative;
         margin-bottom: 2rem;
+        margin-top: 2rem;
     }
     .mobilecontainer {
         background-color: white;
@@ -315,7 +316,7 @@ header nav a:not(:last-child) {
     .greenlady {
         grid-area: pinkguy;
     }
-    .upsell img {
+    .greenlady img {
         max-width: 10rem;
         margin-left: 1rem;
         margin-top: 5rem;
