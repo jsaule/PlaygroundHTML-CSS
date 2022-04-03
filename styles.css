@@ -398,7 +398,7 @@ header nav a:not(:last-child) {
         grid-area: pinkguy;
     }
     .box {
-        margin-top: 9rem;
+        margin-top: 6rem;
         border-bottom: 0.15rem solid #EEEEEE;
         padding-bottom: 0rem;
         border-top: 0.15rem solid #EEEEEE;
