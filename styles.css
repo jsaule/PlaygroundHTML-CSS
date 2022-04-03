@@ -42,6 +42,10 @@ header nav a:not(:last-child) {
     grid-area: pinkguy;
     height: auto;
 }
+.greenlady {
+    grid-area: pinkguy;
+    height: auto;
+}
 .launching {
     grid-area: launching;
     margin-top: 9rem;
@@ -308,8 +312,13 @@ header nav a:not(:last-child) {
             "lines pinkguy"
             "button pinkguy";
     }
-    .pinkguy {
+    .greenlady {
         grid-area: pinkguy;
+    }
+    .upsell img {
+        max-width: 10rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
     }
     .pinkguy img {
         max-width: 28rem;
@@ -384,19 +393,16 @@ header nav a:not(:last-child) {
         border-radius: 1rem;
         overflow: visible;
     }
-    .greenlady {
+    .mobilegreenlady {
         grid-area: pinkguy;
     }
     .box {
-        display: none;
-    }
-    .mobilebox {
         margin-top: 9rem;
         border-bottom: 0.15rem solid #EEEEEE;
         padding-bottom: 0rem;
         border-top: 0.15rem solid #EEEEEE;
     }
-    .greenlady img {
+    .mobilegreenlady img {
         max-width: 10rem;
         margin-left: 1rem;
         margin-top: 5rem;
